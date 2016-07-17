@@ -5,7 +5,6 @@ using RegExp = Bridge.Text.RegularExpressions.Regex;
 using number = System.Double;
 using Number = System.Double;
 
-
 namespace THREE.AnimationUtils
 {
 	[External]
@@ -1927,12 +1926,6 @@ namespace THREE
 		public extern Camera ();
 #pragma warning restore CS0824
 #pragma warning disable CS0626
-		public extern Vector3 GetWorldDirection (Vector3 optionalTarget = default(Vector3));
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-		public extern void LookAt (Vector3 vector);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
 		public extern Camera Clone ();
 #pragma warning restore CS0626
 #pragma warning disable CS0626
@@ -1991,9 +1984,6 @@ namespace THREE
 		public extern void UpdateProjectionMatrix ();
 #pragma warning restore CS0626
 #pragma warning disable CS0626
-		public extern OrthographicCamera Clone ();
-#pragma warning restore CS0626
-#pragma warning disable CS0626
 		public extern OrthographicCamera Copy (OrthographicCamera source);
 #pragma warning restore CS0626
 #pragma warning disable CS0626
@@ -2038,9 +2028,6 @@ namespace THREE
 #pragma warning restore CS0626
 #pragma warning disable CS0626
 		public extern void UpdateProjectionMatrix ();
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-		public extern PerspectiveCamera Clone ();
 #pragma warning restore CS0626
 #pragma warning disable CS0626
 		public extern PerspectiveCamera Copy (PerspectiveCamera source);
@@ -3141,9 +3128,6 @@ namespace THREE
 		public extern InstancedBufferAttribute (ArrayLike<number> data, double itemSize, double meshPerAttribute = default(double));
 #pragma warning restore CS0824
 #pragma warning disable CS0626
-		public extern InstancedBufferAttribute Clone ();
-#pragma warning restore CS0626
-#pragma warning disable CS0626
 		public extern InstancedBufferAttribute Copy (InstancedBufferAttribute source);
 #pragma warning restore CS0626
 	}
@@ -3152,21 +3136,11 @@ namespace THREE
 	{
 #pragma warning disable CS0626
 		[FieldProperty]
-		public extern GroupsInterface Groups { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-		[FieldProperty]
 		public extern double MaxInstancedCount { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0824
 		public extern InstancedBufferGeometry ();
 #pragma warning restore CS0824
-#pragma warning disable CS0626
-		public extern void AddGroup (double start, double count, double instances);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-		public extern InstancedBufferGeometry Clone ();
-#pragma warning restore CS0626
 #pragma warning disable CS0626
 		public extern InstancedBufferGeometry Copy (InstancedBufferGeometry source);
 #pragma warning restore CS0626
@@ -3235,9 +3209,6 @@ namespace THREE
 #pragma warning disable CS0824
 		public extern InstancedInterleavedBuffer (ArrayLike<number> array, double stride, double meshPerAttribute = default(double));
 #pragma warning restore CS0824
-#pragma warning disable CS0626
-		public extern InstancedInterleavedBuffer Clone ();
-#pragma warning restore CS0626
 #pragma warning disable CS0626
 		public extern InstancedInterleavedBuffer Copy (InstancedInterleavedBuffer source);
 #pragma warning restore CS0626
@@ -3739,7 +3710,10 @@ namespace THREE
 		public extern void Set (Vector3 origin, Vector3 direction);
 #pragma warning restore CS0626
 #pragma warning disable CS0626
-		public extern Intersection[] IntersectObject (Object3D @object, bool recursive = default(bool));
+        public extern void SetFromCamera(coordsInterface coords, Camera camera);
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        public extern Intersection[] IntersectObject (Object3D @object, bool recursive = default(bool));
 #pragma warning restore CS0626
 #pragma warning disable CS0626
 		public extern Intersection[] IntersectObjects (Object3D[] objects, bool recursive = default(bool));
@@ -3798,10 +3772,6 @@ namespace THREE
 #pragma warning restore CS0626
 #pragma warning disable CS0626
 		[FieldProperty]
-		public extern bool ReceiveShadow { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-		[FieldProperty]
 		public extern LightShadow Shadow { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
@@ -3850,9 +3820,6 @@ namespace THREE
 #pragma warning disable CS0626
 		public extern Light Copy (Light source);
 #pragma warning restore CS0626
-#pragma warning disable CS0626
-		public extern Light Clone (bool recursive = default(bool));
-#pragma warning restore CS0626
 	}
 	[External]
 	public class LightShadow
@@ -3894,18 +3861,11 @@ namespace THREE
 	[External]
 	public class AmbientLight : Light
 	{
-#pragma warning disable CS0626
-		[FieldProperty]
-		public extern bool CastShadow { get; set; }
-#pragma warning restore CS0626
 #pragma warning disable CS0824
 		public extern AmbientLight (Any<number, string> hex = default(Any<number, string>), double intensity = default(double));
 #pragma warning restore CS0824
 #pragma warning disable CS0626
 		public extern AmbientLight Copy (AmbientLight source);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-		public extern AmbientLight Clone (bool recursive = default(bool));
 #pragma warning restore CS0626
 	}
 	[External]
@@ -3915,22 +3875,11 @@ namespace THREE
 		[FieldProperty]
 		public extern Object3D Target { get; set; }
 #pragma warning restore CS0626
-#pragma warning disable CS0626
-		[FieldProperty]
-		public extern double Intensity { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-		[FieldProperty]
-		public extern LightShadow Shadow { get; set; }
-#pragma warning restore CS0626
 #pragma warning disable CS0824
 		public extern DirectionalLight (Any<number, string> hex = default(Any<number, string>), double intensity = default(double));
 #pragma warning restore CS0824
 #pragma warning disable CS0626
 		public extern DirectionalLight Copy (DirectionalLight source);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-		public extern HemisphereLight Clone (bool recursive = default(bool));
 #pragma warning restore CS0626
 	}
 	[External]
@@ -3940,18 +3889,11 @@ namespace THREE
 		[FieldProperty]
 		public extern Color GroundColor { get; set; }
 #pragma warning restore CS0626
-#pragma warning disable CS0626
-		[FieldProperty]
-		public extern double Intensity { get; set; }
-#pragma warning restore CS0626
 #pragma warning disable CS0824
 		public extern HemisphereLight (Any<number, string> skyColorHex = default(Any<number, string>), Any<number, string> groundColorHex = default(Any<number, string>), double intensity = default(double));
 #pragma warning restore CS0824
 #pragma warning disable CS0626
 		public extern HemisphereLight Copy (HemisphereLight source);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-		public extern HemisphereLight Clone (bool recursive = default(bool));
 #pragma warning restore CS0626
 	}
 	[External]
@@ -3959,19 +3901,11 @@ namespace THREE
 	{
 #pragma warning disable CS0626
 		[FieldProperty]
-		public extern double Intensity { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-		[FieldProperty]
 		public extern double Distance { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
 		[FieldProperty]
 		public extern double Decay { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-		[FieldProperty]
-		public extern LightShadow Shadow { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
 		[FieldProperty]
@@ -3983,9 +3917,6 @@ namespace THREE
 #pragma warning disable CS0626
 		public extern PointLight Copy (PointLight source);
 #pragma warning restore CS0626
-#pragma warning disable CS0626
-		public extern PointLight Clone (bool recursive = default(bool));
-#pragma warning restore CS0626
 	}
 	[External]
 	public class SpotLight : Light
@@ -3993,10 +3924,6 @@ namespace THREE
 #pragma warning disable CS0626
 		[FieldProperty]
 		public extern Object3D Target { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-		[FieldProperty]
-		public extern double Intensity { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
 		[FieldProperty]
@@ -4016,18 +3943,11 @@ namespace THREE
 #pragma warning restore CS0626
 #pragma warning disable CS0626
 		[FieldProperty]
-		public extern LightShadow Shadow { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-		[FieldProperty]
 		public extern double Power { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0824
 		public extern SpotLight (Any<number, string> hex = default(Any<number, string>), double intensity = default(double), double distance = default(double), double angle = default(double), double exponent = default(double), double decay = default(double));
 #pragma warning restore CS0824
-#pragma warning disable CS0626
-		public extern SpotLight Clone (bool recursive = default(bool));
-#pragma warning restore CS0626
 #pragma warning disable CS0626
 		public extern SpotLight Copy (PointLight source);
 #pragma warning restore CS0626
@@ -4991,10 +4911,6 @@ namespace THREE
 #pragma warning restore CS0626
 #pragma warning disable CS0626
 		[FieldProperty]
-		Blending Blending { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-		[FieldProperty]
 		Colors VertexColors { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
@@ -5023,10 +4939,6 @@ namespace THREE
 #pragma warning restore CS0626
 #pragma warning disable CS0626
 		[FieldProperty]
-		public extern Blending Blending { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-		[FieldProperty]
 		public extern Colors VertexColors { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
@@ -5038,9 +4950,6 @@ namespace THREE
 #pragma warning restore CS0824
 #pragma warning disable CS0626
 		public extern void SetValues (LineBasicMaterialParameters parameters);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-		public extern LineBasicMaterial Clone ();
 #pragma warning restore CS0626
 #pragma warning disable CS0626
 		public extern LineBasicMaterial Copy (LineBasicMaterial source);
@@ -5165,10 +5074,6 @@ namespace THREE
 #pragma warning restore CS0626
 #pragma warning disable CS0626
 		[FieldProperty]
-		Blending Blending { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-		[FieldProperty]
 		Colors VertexColors { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
@@ -5201,10 +5106,6 @@ namespace THREE
 #pragma warning restore CS0626
 #pragma warning disable CS0626
 		[FieldProperty]
-		public extern Blending Blending { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-		[FieldProperty]
 		public extern Colors VertexColors { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
@@ -5216,9 +5117,6 @@ namespace THREE
 #pragma warning restore CS0824
 #pragma warning disable CS0626
 		public extern void SetValues (LineDashedMaterialParameters parameters);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-		public extern LineDashedMaterial Clone ();
 #pragma warning restore CS0626
 #pragma warning disable CS0626
 		public extern LineDashedMaterial Copy (LineDashedMaterial source);
@@ -5363,10 +5261,6 @@ namespace THREE
 #pragma warning restore CS0626
 #pragma warning disable CS0626
 		[FieldProperty]
-		double Opacity { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-		[FieldProperty]
 		Texture Map { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
@@ -5404,10 +5298,6 @@ namespace THREE
 #pragma warning disable CS0626
 		[FieldProperty]
 		Shading Shading { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-		[FieldProperty]
-		Blending Blending { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
 		[FieldProperty]
@@ -5495,10 +5385,6 @@ namespace THREE
 #pragma warning restore CS0626
 #pragma warning disable CS0626
 		[FieldProperty]
-		public extern Blending Blending { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-		[FieldProperty]
 		public extern bool Wireframe { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
@@ -5530,9 +5416,6 @@ namespace THREE
 #pragma warning restore CS0824
 #pragma warning disable CS0626
 		public extern void SetValues (MeshBasicMaterialParameters parameters);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-		public extern MeshBasicMaterial Clone ();
 #pragma warning restore CS0626
 #pragma warning disable CS0626
 		public extern MeshBasicMaterial Copy (MeshBasicMaterial source);
@@ -5645,9 +5528,6 @@ namespace THREE
 #pragma warning restore CS0824
 #pragma warning disable CS0626
 		public extern void SetValues (MeshDepthMaterialParameters parameters);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-		public extern MeshDepthMaterial Clone ();
 #pragma warning restore CS0626
 #pragma warning disable CS0626
 		public extern MeshDepthMaterial Copy (MeshDepthMaterial source);
@@ -5867,10 +5747,6 @@ namespace THREE
 #pragma warning restore CS0626
 #pragma warning disable CS0626
 		[FieldProperty]
-		Blending Blending { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-		[FieldProperty]
 		bool Wireframe { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
@@ -5971,10 +5847,6 @@ namespace THREE
 #pragma warning restore CS0626
 #pragma warning disable CS0626
 		[FieldProperty]
-		public extern Blending Blending { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-		[FieldProperty]
 		public extern bool Wireframe { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
@@ -6010,9 +5882,6 @@ namespace THREE
 #pragma warning restore CS0824
 #pragma warning disable CS0626
 		public extern void SetValues (MeshLambertMaterialParameters parameters);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-		public extern MeshLambertMaterial Clone ();
 #pragma warning restore CS0626
 #pragma warning disable CS0626
 		public extern MeshLambertMaterial Copy (MeshLambertMaterial source);
@@ -6292,10 +6161,6 @@ namespace THREE
 #pragma warning restore CS0626
 #pragma warning disable CS0626
 		[FieldProperty]
-		Blending Blending { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-		[FieldProperty]
 		bool Wireframe { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
@@ -6428,10 +6293,6 @@ namespace THREE
 #pragma warning restore CS0626
 #pragma warning disable CS0626
 		[FieldProperty]
-		public extern Blending Blending { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-		[FieldProperty]
 		public extern bool Wireframe { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
@@ -6463,9 +6324,6 @@ namespace THREE
 #pragma warning restore CS0824
 #pragma warning disable CS0626
 		public extern void SetValues (MeshStandardMaterialParameters parameters);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-		public extern MeshStandardMaterial Clone ();
 #pragma warning restore CS0626
 #pragma warning disable CS0626
 		public extern MeshStandardMaterial Copy (MeshStandardMaterial source);
@@ -6691,9 +6549,6 @@ namespace THREE
 		public extern void SetValues (MeshPhysicalMaterialParameters parameters);
 #pragma warning restore CS0626
 #pragma warning disable CS0626
-		public extern MeshPhysicalMaterial Clone ();
-#pragma warning restore CS0626
-#pragma warning disable CS0626
 		public extern MeshPhysicalMaterial Copy (MeshPhysicalMaterial source);
 #pragma warning restore CS0626
 	}
@@ -6815,9 +6670,6 @@ namespace THREE
 #pragma warning restore CS0824
 #pragma warning disable CS0626
 		public extern void SetValues (MeshNormalMaterialParameters parameters);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-		public extern MeshNormalMaterial Clone ();
 #pragma warning restore CS0626
 #pragma warning disable CS0626
 		public extern MeshNormalMaterial Copy (MeshNormalMaterial source);
@@ -7015,10 +6867,6 @@ namespace THREE
 #pragma warning restore CS0626
 #pragma warning disable CS0626
 		[FieldProperty]
-		double Opacity { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-		[FieldProperty]
 		Texture Map { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
@@ -7104,10 +6952,6 @@ namespace THREE
 #pragma warning disable CS0626
 		[FieldProperty]
 		Shading Shading { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-		[FieldProperty]
-		Blending Blending { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
 		[FieldProperty]
@@ -7255,10 +7099,6 @@ namespace THREE
 #pragma warning restore CS0626
 #pragma warning disable CS0626
 		[FieldProperty]
-		public extern Blending Blending { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-		[FieldProperty]
 		public extern bool Wireframe { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
@@ -7300,9 +7140,6 @@ namespace THREE
 		public extern void SetValues (MeshPhongMaterialParameters parameters);
 #pragma warning restore CS0626
 #pragma warning disable CS0626
-		public extern MeshPhongMaterial Clone ();
-#pragma warning restore CS0626
-#pragma warning disable CS0626
 		public extern MeshPhongMaterial Copy (MeshPhongMaterial source);
 #pragma warning restore CS0626
 	}
@@ -7316,12 +7153,6 @@ namespace THREE
 #pragma warning disable CS0824
 		public extern MultiMaterial (Material[] materials = default(Material[]));
 #pragma warning restore CS0824
-#pragma warning disable CS0626
-		public extern object ToJSON (object meta);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-		public extern MultiMaterial Clone ();
-#pragma warning restore CS0626
 	}
 	[External]
 	public class MeshFaceMaterial : MultiMaterial
@@ -7442,10 +7273,6 @@ namespace THREE
 #pragma warning restore CS0626
 #pragma warning disable CS0626
 		[FieldProperty]
-		Blending Blending { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-		[FieldProperty]
 		Colors VertexColors { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
@@ -7474,10 +7301,6 @@ namespace THREE
 #pragma warning restore CS0626
 #pragma warning disable CS0626
 		[FieldProperty]
-		public extern Blending Blending { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-		[FieldProperty]
 		public extern bool VertexColors { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
@@ -7489,9 +7312,6 @@ namespace THREE
 #pragma warning restore CS0824
 #pragma warning disable CS0626
 		public extern void SetValues (PointsMaterialParameters parameters);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-		public extern PointsMaterial Clone ();
 #pragma warning restore CS0626
 #pragma warning disable CS0626
 		public extern PointsMaterial Copy (PointsMaterial source);
@@ -7811,13 +7631,7 @@ namespace THREE
 		public extern void SetValues (ShaderMaterialParameters parameters);
 #pragma warning restore CS0626
 #pragma warning disable CS0626
-		public extern ShaderMaterial Clone ();
-#pragma warning restore CS0626
-#pragma warning disable CS0626
 		public extern ShaderMaterial Copy (ShaderMaterial source);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-		public extern object ToJSON (object meta);
 #pragma warning restore CS0626
 	}
 	[External]
@@ -7956,9 +7770,6 @@ namespace THREE
 #pragma warning restore CS0824
 #pragma warning disable CS0626
 		public extern void SetValues (SpriteMaterialParameters parameters);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-		public extern SpriteMaterial Clone ();
 #pragma warning restore CS0626
 #pragma warning disable CS0626
 		public extern SpriteMaterial Copy (SpriteMaterial source);
@@ -10016,12 +9827,6 @@ namespace THREE
 	public class Vertex : Vector3
 	{
 #pragma warning disable CS0626
-		public extern void SetComponent (double index, double value);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-		public extern double GetComponent (double index);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
 		public extern Vector Copy (Vector v);
 #pragma warning restore CS0626
 #pragma warning disable CS0626
@@ -10037,25 +9842,7 @@ namespace THREE
 		public extern Vector SubVectors (Vector a, Vector b);
 #pragma warning restore CS0626
 #pragma warning disable CS0626
-		public extern Vector MultiplyScalar (double s);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-		public extern Vector DivideScalar (double s);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-		public extern Vector Negate ();
-#pragma warning restore CS0626
-#pragma warning disable CS0626
 		public extern double Dot (Vector v);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-		public extern double LengthSq ();
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-		public extern double Length ();
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-		public extern Vector Normalize ();
 #pragma warning restore CS0626
 #pragma warning disable CS0626
 		public extern double DistanceTo (Vector v);
@@ -10064,16 +9851,10 @@ namespace THREE
 		public extern double DistanceToSquared (Vector v);
 #pragma warning restore CS0626
 #pragma warning disable CS0626
-		public extern Vector SetLength (double l);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
 		public extern Vector Lerp (Vector v, double alpha);
 #pragma warning restore CS0626
 #pragma warning disable CS0626
 		public extern bool Equals (Vector v);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-		public extern Vector Clone ();
 #pragma warning restore CS0626
 #pragma warning disable CS0824
 		extern Vertex ();
@@ -10390,9 +10171,6 @@ namespace THREE
 		public extern Object3D GetObjectForDistance (double distance);
 #pragma warning restore CS0626
 #pragma warning disable CS0626
-		public extern void Raycast (Raycaster raycaster, object intersects);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
 		public extern void Update (Camera camera);
 #pragma warning restore CS0626
 #pragma warning disable CS0626
@@ -10511,9 +10289,6 @@ namespace THREE
 		public extern LensFlare (Texture texture = default(Texture), double size = default(double), double distance = default(double), Blending blending = default(Blending), Color color = default(Color));
 #pragma warning restore CS0824
 #pragma warning disable CS0626
-		public extern void Add (Object3D @object);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
 		public extern void Add (Texture texture, double size = default(double), double distance = default(double), Blending blending = default(Blending), Color color = default(Color));
 #pragma warning restore CS0626
 #pragma warning disable CS0626
@@ -10541,9 +10316,6 @@ namespace THREE
 		public extern Line (Any<Geometry, BufferGeometry> geometry = default(Any<Geometry, BufferGeometry>), Any<LineDashedMaterial, LineBasicMaterial, ShaderMaterial> material = default(Any<LineDashedMaterial, LineBasicMaterial, ShaderMaterial>), double mode = default(double));
 #pragma warning restore CS0824
 #pragma warning disable CS0626
-		public extern void Raycast (Raycaster raycaster, object intersects);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
 		public extern Line Clone ();
 #pragma warning restore CS0626
 #pragma warning disable CS0626
@@ -10556,9 +10328,6 @@ namespace THREE
 #pragma warning disable CS0824
 		public extern LineSegments (Any<Geometry, BufferGeometry> geometry = default(Any<Geometry, BufferGeometry>), Any<LineDashedMaterial, LineBasicMaterial, ShaderMaterial> material = default(Any<LineDashedMaterial, LineBasicMaterial, ShaderMaterial>), double mode = default(double));
 #pragma warning restore CS0824
-#pragma warning disable CS0626
-		public extern LineSegments Clone ();
-#pragma warning restore CS0626
 #pragma warning disable CS0626
 		public extern LineSegments Copy (LineSegments source);
 #pragma warning restore CS0626
@@ -10599,9 +10368,6 @@ namespace THREE
 		public extern double GetMorphTargetIndexByName (string name);
 #pragma warning restore CS0626
 #pragma warning disable CS0626
-		public extern void Raycast (Raycaster raycaster, object intersects);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
 		public extern Mesh Clone ();
 #pragma warning restore CS0626
 #pragma warning disable CS0626
@@ -10622,9 +10388,6 @@ namespace THREE
 #pragma warning disable CS0824
 		public extern Points (Any<Geometry, BufferGeometry> geometry = default(Any<Geometry, BufferGeometry>), Material material = default(Material));
 #pragma warning restore CS0824
-#pragma warning disable CS0626
-		public extern void Raycast (Raycaster raycaster, object intersects);
-#pragma warning restore CS0626
 #pragma warning disable CS0626
 		public extern Points Clone ();
 #pragma warning restore CS0626
@@ -10747,12 +10510,6 @@ namespace THREE
 		public extern void NormalizeSkinWeights ();
 #pragma warning restore CS0626
 #pragma warning disable CS0626
-		public extern void UpdateMatrixWorld (bool force = default(bool));
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-		public extern SkinnedMesh Clone ();
-#pragma warning restore CS0626
-#pragma warning disable CS0626
 		public extern SkinnedMesh Copy (SkinnedMesh source);
 #pragma warning restore CS0626
 	}
@@ -10770,9 +10527,6 @@ namespace THREE
 #pragma warning disable CS0824
 		public extern Sprite (Material material = default(Material));
 #pragma warning restore CS0824
-#pragma warning disable CS0626
-		public extern void Raycast (Raycaster raycaster, object intersects);
-#pragma warning restore CS0626
 #pragma warning disable CS0626
 		public extern Sprite Clone ();
 #pragma warning restore CS0626
@@ -13852,9 +13606,6 @@ namespace THREE
 		public extern CanvasTexture (Any<HTMLImageElement, HTMLCanvasElement, HTMLVideoElement> canvas, Mapping mapping = default(Mapping), Wrapping wrapS = default(Wrapping), Wrapping wrapT = default(Wrapping), TextureFilter magFilter = default(TextureFilter), TextureFilter minFilter = default(TextureFilter), PixelFormat format = default(PixelFormat), TextureDataType type = default(TextureDataType), double anisotropy = default(double));
 #pragma warning restore CS0824
 #pragma warning disable CS0626
-		public extern CanvasTexture Clone ();
-#pragma warning restore CS0626
-#pragma warning disable CS0626
 		public extern CanvasTexture Copy (CanvasTexture source);
 #pragma warning restore CS0626
 	}
@@ -13897,16 +13648,9 @@ namespace THREE
 	[External]
 	public class CompressedTexture : Texture
 	{
-#pragma warning disable CS0626
-		[FieldProperty]
-		public extern ImageInterface Image { get; set; }
-#pragma warning restore CS0626
 #pragma warning disable CS0824
 		public extern CompressedTexture (ImageData[] mipmaps, double width, double height, PixelFormat format = default(PixelFormat), TextureDataType type = default(TextureDataType), Mapping mapping = default(Mapping), Wrapping wrapS = default(Wrapping), Wrapping wrapT = default(Wrapping), TextureFilter magFilter = default(TextureFilter), TextureFilter minFilter = default(TextureFilter), double anisotropy = default(double));
 #pragma warning restore CS0824
-#pragma warning disable CS0626
-		public extern CompressedTexture Clone ();
-#pragma warning restore CS0626
 #pragma warning disable CS0626
 		public extern CompressedTexture Copy (CompressedTexture source);
 #pragma warning restore CS0626
@@ -13914,16 +13658,9 @@ namespace THREE
 	[External]
 	public class DataTexture : Texture
 	{
-#pragma warning disable CS0626
-		[FieldProperty]
-		public extern ImageInterface Image { get; set; }
-#pragma warning restore CS0626
 #pragma warning disable CS0824
 		public extern DataTexture (Any<Any<ArrayBuffer, Int8Array, Uint8Array>, Uint8ClampedArray, Int16Array, Uint16Array, Int32Array, Uint32Array, Float32Array, Float64Array> data, double width, double height, PixelFormat format, TextureDataType type, Mapping mapping, Wrapping wrapS, Wrapping wrapT, TextureFilter magFilter, TextureFilter minFilter, double anisotropy = default(double));
 #pragma warning restore CS0824
-#pragma warning disable CS0626
-		public extern DataTexture Clone ();
-#pragma warning restore CS0626
 #pragma warning disable CS0626
 		public extern DataTexture Copy (DataTexture source);
 #pragma warning restore CS0626
@@ -13935,19 +13672,12 @@ namespace THREE
 		public extern VideoTexture (HTMLVideoElement video, Mapping mapping = default(Mapping), Wrapping wrapS = default(Wrapping), Wrapping wrapT = default(Wrapping), TextureFilter magFilter = default(TextureFilter), TextureFilter minFilter = default(TextureFilter), PixelFormat format = default(PixelFormat), TextureDataType type = default(TextureDataType), double anisotropy = default(double));
 #pragma warning restore CS0824
 #pragma warning disable CS0626
-		public extern VideoTexture Clone ();
-#pragma warning restore CS0626
-#pragma warning disable CS0626
 		public extern VideoTexture Copy (VideoTexture source);
 #pragma warning restore CS0626
 	}
 	[External]
 	public class Audio : Object3D
 	{
-#pragma warning disable CS0626
-		[FieldProperty]
-		public extern string Type { get; set; }
-#pragma warning restore CS0626
 #pragma warning disable CS0626
 		[FieldProperty]
 		public extern AudioContext Context { get; set; }
@@ -14129,10 +13859,6 @@ namespace THREE
 	{
 #pragma warning disable CS0626
 		[FieldProperty]
-		public extern string Type { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-		[FieldProperty]
 		public extern AudioContext Context { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
@@ -14225,12 +13951,6 @@ namespace THREE
 		public extern void ClosePath ();
 #pragma warning restore CS0626
 #pragma warning disable CS0626
-		public extern T GetPoint (double t);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-		public extern double GetLength ();
-#pragma warning restore CS0626
-#pragma warning disable CS0626
 		public extern double[] GetCurveLengths ();
 #pragma warning restore CS0626
 #pragma warning disable CS0626
@@ -14318,9 +14038,6 @@ namespace THREE
 		public extern void Absellipse (double aX, double aY, double xRadius, double yRadius, double aStartAngle, double aEndAngle, bool aClockwise, double aRotation);
 #pragma warning restore CS0626
 #pragma warning disable CS0626
-		public extern Vector2[] GetSpacedPoints (double divisions = default(double));
-#pragma warning restore CS0626
-#pragma warning disable CS0626
 		public extern Vector2[] GetPoints (double divisions = default(double), bool closedPath = default(bool));
 #pragma warning restore CS0626
 #pragma warning disable CS0626
@@ -14385,9 +14102,6 @@ namespace THREE
 #pragma warning disable CS0824
 		public extern CatmullRomCurve3 (Vector3[] points = default(Vector3[]));
 #pragma warning restore CS0824
-#pragma warning disable CS0626
-		public extern Vector3 GetPoint (double t);
-#pragma warning restore CS0626
 	}
 	[External]
 	public class ClosedSplineCurve3 : CatmullRomCurve3
@@ -14448,9 +14162,6 @@ namespace THREE
 #pragma warning disable CS0824
 		public extern CubicBezierCurve3 (Vector3 v0, Vector3 v1, Vector3 v2, Vector3 v3);
 #pragma warning restore CS0824
-#pragma warning disable CS0626
-		public extern Vector3 GetPoint (double t);
-#pragma warning restore CS0626
 	}
 	[External]
 	public class EllipseCurve : Curve<Vector2>
@@ -14527,9 +14238,6 @@ namespace THREE
 #pragma warning disable CS0824
 		public extern LineCurve3 (Vector3 v1, Vector3 v2);
 #pragma warning restore CS0824
-#pragma warning disable CS0626
-		public extern Vector3 GetPoint (double t);
-#pragma warning restore CS0626
 	}
 	[External]
 	public class QuadraticBezierCurve : Curve<Vector2>
@@ -14568,9 +14276,6 @@ namespace THREE
 #pragma warning disable CS0824
 		public extern QuadraticBezierCurve3 (Vector3 v0, Vector3 v1, Vector3 v2);
 #pragma warning restore CS0824
-#pragma warning disable CS0626
-		public extern Vector3 GetPoint (double t);
-#pragma warning restore CS0626
 	}
 	[External]
 	public class SplineCurve : Curve<Vector2>
@@ -14654,9 +14359,6 @@ namespace THREE
 #pragma warning disable CS0824
 		public extern BoxGeometry (double width, double height, double depth, double widthSegments = default(double), double heightSegments = default(double), double depthSegments = default(double));
 #pragma warning restore CS0824
-#pragma warning disable CS0626
-		public extern BoxGeometry Clone ();
-#pragma warning restore CS0626
 	}
 	[External]
 	public class CubeGeometry : BoxGeometry
@@ -14726,9 +14428,6 @@ namespace THREE
 #pragma warning disable CS0824
 		public extern EdgesGeometry (BufferGeometry geometry, double thresholdAngle);
 #pragma warning restore CS0824
-#pragma warning disable CS0626
-		public extern EdgesGeometry Clone ();
-#pragma warning restore CS0626
 	}
 	[ObjectLiteral]
 	public class JSONWorldUVGeneratorInterface : WorldUVGeneratorInterface
@@ -14859,10 +14558,6 @@ namespace THREE
 #pragma warning disable CS0626
 		[FieldProperty]
 		public extern ParametersInterface Parameters { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-		[FieldProperty]
-		public extern Sphere BoundingSphere { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0824
 		public extern PolyhedronGeometry (Vector3[] vertices, Face3[] faces, double radius = default(double), double detail = default(double));
