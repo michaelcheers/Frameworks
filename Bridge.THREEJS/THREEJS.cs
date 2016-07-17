@@ -3719,7 +3719,24 @@ namespace THREE
 		public extern Intersection[] IntersectObjects (Object3D[] objects, bool recursive = default(bool));
 #pragma warning restore CS0626
 	}
-	[External]
+
+    [External]
+    public interface coordsInterface
+    {
+        [FieldProperty]
+        int X { get; set; }
+        [FieldProperty]
+        int Y { get; set; }
+    }
+
+    [ObjectLiteral]
+    public class JSONcoordsInterface : coordsInterface
+    {
+        public int X { get; set; }
+        public int Y { get; set; }
+    }
+
+    [External]
 	public class Layers
 	{
 #pragma warning disable CS0626
