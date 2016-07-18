@@ -86,602 +86,6 @@ namespace THREE.Cache
     }
 
 }
-namespace THREE.ColorKeywords
-{
-    [External]
-    public static class GlobalClass
-    {
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Aliceblue { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Antiquewhite { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Aqua { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Aquamarine { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Azure { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Beige { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Bisque { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Black { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Blanchedalmond { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Blue { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Blueviolet { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Brown { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Burlywood { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Cadetblue { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Chartreuse { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Chocolate { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Coral { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Cornflowerblue { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Cornsilk { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Crimson { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Cyan { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Darkblue { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Darkcyan { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Darkgoldenrod { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Darkgray { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Darkgreen { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Darkgrey { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Darkkhaki { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Darkmagenta { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Darkolivegreen { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Darkorange { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Darkorchid { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Darkred { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Darksalmon { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Darkseagreen { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Darkslateblue { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Darkslategray { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Darkslategrey { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Darkturquoise { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Darkviolet { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Deeppink { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Deepskyblue { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Dimgray { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Dimgrey { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Dodgerblue { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Firebrick { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Floralwhite { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Forestgreen { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Fuchsia { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Gainsboro { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Ghostwhite { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Gold { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Goldenrod { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Gray { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Green { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Greenyellow { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Grey { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Honeydew { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Hotpink { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Indianred { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Indigo { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Ivory { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Khaki { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Lavender { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Lavenderblush { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Lawngreen { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Lemonchiffon { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Lightblue { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Lightcoral { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Lightcyan { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Lightgoldenrodyellow { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Lightgray { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Lightgreen { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Lightgrey { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Lightpink { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Lightsalmon { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Lightseagreen { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Lightskyblue { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Lightslategray { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Lightslategrey { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Lightsteelblue { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Lightyellow { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Lime { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Limegreen { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Linen { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Magenta { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Maroon { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Mediumaquamarine { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Mediumblue { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Mediumorchid { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Mediumpurple { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Mediumseagreen { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Mediumslateblue { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Mediumspringgreen { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Mediumturquoise { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Mediumvioletred { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Midnightblue { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Mintcream { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Mistyrose { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Moccasin { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Navajowhite { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Navy { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Oldlace { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Olive { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Olivedrab { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Orange { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Orangered { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Orchid { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Palegoldenrod { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Palegreen { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Paleturquoise { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Palevioletred { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Papayawhip { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Peachpuff { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Peru { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Pink { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Plum { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Powderblue { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Purple { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Red { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Rosybrown { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Royalblue { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Saddlebrown { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Salmon { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Sandybrown { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Seagreen { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Seashell { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Sienna { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Silver { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Skyblue { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Slateblue { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Slategray { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Slategrey { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Snow { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Springgreen { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Steelblue { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Tan { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Teal { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Thistle { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Tomato { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Turquoise { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Violet { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Wheat { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double White { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Whitesmoke { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Yellow { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static double Yellowgreen { get; set; }
-#pragma warning restore CS0626
-    }
-
-}
 namespace THREE.Math
 {
     [External]
@@ -1351,6 +755,598 @@ namespace THREE
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         public extern static void Log(object message = default(object), params object[] optionalParams);
+#pragma warning restore CS0626
+    }
+    [External]
+    public static class ColorKeywords
+    {
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Aliceblue { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Antiquewhite { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Aqua { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Aquamarine { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Azure { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Beige { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Bisque { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Black { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Blanchedalmond { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Blue { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Blueviolet { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Brown { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Burlywood { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Cadetblue { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Chartreuse { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Chocolate { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Coral { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Cornflowerblue { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Cornsilk { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Crimson { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Cyan { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Darkblue { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Darkcyan { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Darkgoldenrod { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Darkgray { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Darkgreen { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Darkgrey { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Darkkhaki { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Darkmagenta { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Darkolivegreen { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Darkorange { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Darkorchid { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Darkred { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Darksalmon { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Darkseagreen { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Darkslateblue { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Darkslategray { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Darkslategrey { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Darkturquoise { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Darkviolet { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Deeppink { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Deepskyblue { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Dimgray { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Dimgrey { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Dodgerblue { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Firebrick { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Floralwhite { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Forestgreen { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Fuchsia { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Gainsboro { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Ghostwhite { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Gold { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Goldenrod { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Gray { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Green { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Greenyellow { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Grey { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Honeydew { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Hotpink { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Indianred { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Indigo { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Ivory { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Khaki { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Lavender { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Lavenderblush { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Lawngreen { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Lemonchiffon { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Lightblue { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Lightcoral { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Lightcyan { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Lightgoldenrodyellow { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Lightgray { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Lightgreen { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Lightgrey { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Lightpink { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Lightsalmon { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Lightseagreen { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Lightskyblue { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Lightslategray { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Lightslategrey { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Lightsteelblue { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Lightyellow { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Lime { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Limegreen { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Linen { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Magenta { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Maroon { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Mediumaquamarine { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Mediumblue { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Mediumorchid { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Mediumpurple { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Mediumseagreen { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Mediumslateblue { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Mediumspringgreen { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Mediumturquoise { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Mediumvioletred { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Midnightblue { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Mintcream { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Mistyrose { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Moccasin { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Navajowhite { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Navy { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Oldlace { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Olive { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Olivedrab { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Orange { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Orangered { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Orchid { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Palegoldenrod { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Palegreen { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Paleturquoise { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Palevioletred { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Papayawhip { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Peachpuff { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Peru { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Pink { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Plum { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Powderblue { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Purple { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Red { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Rosybrown { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Royalblue { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Saddlebrown { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Salmon { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Sandybrown { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Seagreen { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Seashell { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Sienna { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Silver { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Skyblue { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Slateblue { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Slategray { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Slategrey { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Snow { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Springgreen { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Steelblue { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Tan { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Teal { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Thistle { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Tomato { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Turquoise { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Violet { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Wheat { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double White { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Whitesmoke { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Yellow { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static double Yellowgreen { get; set; }
 #pragma warning restore CS0626
     }
     [External]
