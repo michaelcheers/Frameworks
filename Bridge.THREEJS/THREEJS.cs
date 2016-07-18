@@ -4,7 +4,7 @@ using Bridge.Html5;
 using RegExp = Bridge.Text.RegularExpressions.Regex;
 using number = System.Double;
 using Number = System.Double;
-
+using Bridge.WebGL;
 
 namespace THREE.AnimationUtils
 {

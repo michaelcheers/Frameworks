@@ -51,6 +51,12 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WebGL\Bridge.WebGL.csproj">
+      <Project>{476C2F05-4770-481C-90D1-8353E5F379DC}</Project>
+      <Name>Bridge.WebGL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Bridge.Min.1.14.0\build\Bridge.Min.targets" Condition="Exists('..\packages\Bridge.Min.1.14.0\build\Bridge.Min.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
