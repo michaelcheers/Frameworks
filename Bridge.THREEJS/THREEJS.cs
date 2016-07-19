@@ -6,6 +6,7 @@ using number = System.Double;
 using Number = System.Double;
 using Bridge.WebGL;
 
+
 namespace THREE.AnimationUtils
 {
     [External]
@@ -39,10 +40,12 @@ namespace THREE.GeometryUtils
     {
 #pragma warning disable CS0626
         [FieldProperty]
-        public extern static double Ject3DIdCount { get; set; }
+        [Name(false)]
+        public extern static double Object3DIdCount { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static LoadingManager DefaultLoadingManager { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
@@ -61,15 +64,16 @@ namespace THREE.Cache
     {
 #pragma warning disable CS0626
         [FieldProperty]
-        public extern static bool Abled { get; set; }
+        public extern static bool Enabled { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
-        public extern static object Les { get; set; }
+        public extern static object Files { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
-        public extern static double TerialIdCount { get; set; }
+        [Name(false)]
+        public extern static double MaterialIdCount { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         public extern static void Add(string key, object file);
@@ -93,23 +97,28 @@ namespace THREE.Math
     {
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static LineMode LineStrip { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static LineMode LinePieces { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
-        public extern static AderChunkInterface AderChunk { get; set; }
+        [Name(false)]
+        public extern static ShaderChunkInterface ShaderChunk { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
-        public extern static AderLibInterface AderLib { get; set; }
+        [Name(false)]
+        public extern static ShaderLibInterface ShaderLib { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
-        public extern static IformsLibInterface IformsLib { get; set; }
+        [Name(false)]
+        public extern static UniformsLibInterface UniformsLib { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         public extern static string GenerateUUID();
@@ -166,7 +175,8 @@ namespace THREE.UniformsUtils
     {
 #pragma warning disable CS0626
         [FieldProperty]
-        public extern static double XtureIdCount { get; set; }
+        [Name(false)]
+        public extern static double TextureIdCount { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         public extern static object Merge(object[] uniforms);
@@ -204,7 +214,7 @@ namespace THREE.ImageUtils
     {
 #pragma warning disable CS0626
         [FieldProperty]
-        public extern static string OssOrigin { get; set; }
+        public extern static string CrossOrigin { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         public extern static Texture LoadTexture(string url, Mapping mapping = default(Mapping), loadTextureParam21Delegate onLoad = default(loadTextureParam21Delegate), loadTextureParam31Delegate onError = default(loadTextureParam31Delegate));
@@ -273,450 +283,562 @@ namespace THREE
     {
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static string REVISION { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static CullFace CullFaceNone { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static CullFace CullFaceBack { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static CullFace CullFaceFront { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static CullFace CullFaceFrontBack { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static FrontFaceDirection FrontFaceDirectionCW { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static FrontFaceDirection FrontFaceDirectionCCW { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static ShadowMapType BasicShadowMap { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static ShadowMapType PCFShadowMap { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static ShadowMapType PCFSoftShadowMap { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static Side FrontSide { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static Side BackSide { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static Side DoubleSide { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static Shading FlatShading { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static Shading SmoothShading { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static Colors NoColors { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static Colors FaceColors { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static Colors VertexColors { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static Blending NoBlending { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static Blending NormalBlending { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static Blending AdditiveBlending { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static Blending SubtractiveBlending { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static Blending MultiplyBlending { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static Blending CustomBlending { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static BlendingEquation AddEquation { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static BlendingEquation SubtractEquation { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static BlendingEquation ReverseSubtractEquation { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static BlendingEquation MinEquation { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static BlendingEquation MaxEquation { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static BlendingDstFactor ZeroFactor { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static BlendingDstFactor OneFactor { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static BlendingDstFactor SrcColorFactor { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static BlendingDstFactor OneMinusSrcColorFactor { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static BlendingDstFactor SrcAlphaFactor { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static BlendingDstFactor OneMinusSrcAlphaFactor { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static BlendingDstFactor DstAlphaFactor { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static BlendingDstFactor OneMinusDstAlphaFactor { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static BlendingSrcFactor DstColorFactor { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static BlendingSrcFactor OneMinusDstColorFactor { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static BlendingSrcFactor SrcAlphaSaturateFactor { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static DepthModes NeverDepth { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static DepthModes AlwaysDepth { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static DepthModes LessDepth { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static DepthModes LessEqualDepth { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static DepthModes EqualDepth { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static DepthModes GreaterEqualDepth { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static DepthModes GreaterDepth { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static DepthModes NotEqualDepth { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static Combine MultiplyOperation { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static Combine MixOperation { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static Combine AddOperation { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static ToneMapping NoToneMapping { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static ToneMapping LinearToneMapping { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static ToneMapping ReinhardToneMapping { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static ToneMapping Uncharted2ToneMapping { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static ToneMapping CineonToneMapping { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static Mapping UVMapping { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static Mapping CubeReflectionMapping { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static Mapping CubeRefractionMapping { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static Mapping EquirectangularReflectionMapping { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static Mapping EquirectangularRefractionMapping { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static Mapping SphericalReflectionMapping { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static Mapping CubeUVReflectionMapping { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static Mapping CubeUVRefractionMapping { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static Wrapping RepeatWrapping { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static Wrapping ClampToEdgeWrapping { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static Wrapping MirroredRepeatWrapping { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static TextureFilter NearestFilter { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static TextureFilter NearestMipMapNearestFilter { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static TextureFilter NearestMipMapLinearFilter { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static TextureFilter LinearFilter { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static TextureFilter LinearMipMapNearestFilter { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static TextureFilter LinearMipMapLinearFilter { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static TextureDataType UnsignedByteType { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static TextureDataType ByteType { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static TextureDataType ShortType { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static TextureDataType UnsignedShortType { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static TextureDataType IntType { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static TextureDataType UnsignedIntType { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static TextureDataType FloatType { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static TextureDataType HalfFloatType { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static PixelType UnsignedShort4444Type { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static PixelType UnsignedShort5551Type { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static PixelType UnsignedShort565Type { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static PixelFormat AlphaFormat { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static PixelFormat RGBFormat { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static PixelFormat RGBAFormat { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static PixelFormat LuminanceFormat { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static PixelFormat LuminanceAlphaFormat { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static PixelFormat RGBEFormat { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static CompressedPixelFormat RGB_S3TC_DXT1_Format { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static CompressedPixelFormat RGBA_S3TC_DXT1_Format { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static CompressedPixelFormat RGBA_S3TC_DXT3_Format { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static CompressedPixelFormat RGBA_S3TC_DXT5_Format { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static CompressedPixelFormat RGB_PVRTC_4BPPV1_Format { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static CompressedPixelFormat RGB_PVRTC_2BPPV1_Format { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static CompressedPixelFormat RGBA_PVRTC_4BPPV1_Format { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static CompressedPixelFormat RGBA_PVRTC_2BPPV1_Format { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static CompressedPixelFormat RGB_ETC1_Format { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static AnimationActionLoopStyles LoopOnce { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static AnimationActionLoopStyles LoopRepeat { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static AnimationActionLoopStyles LoopPingPong { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static InterpolationModes InterpolateDiscrete { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static InterpolationModes InterpolateLinear { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static InterpolationModes InterpolateSmooth { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static InterpolationEndingModes ZeroCurvatureEnding { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static InterpolationEndingModes ZeroSlopeEnding { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static InterpolationEndingModes WrapAroundEnding { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static TrianglesDrawModes TrianglesDrawModesMode { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static TrianglesDrawModes TriangleStripDrawMode { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static TrianglesDrawModes TriangleFanDrawMode { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static TextureEncoding LinearEncoding { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
@@ -725,26 +847,32 @@ namespace THREE
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static TextureEncoding GammaEncoding { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static TextureEncoding RGBEEncoding { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static TextureEncoding LogLuvEncoding { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static TextureEncoding RGBM7Encoding { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static TextureEncoding RGBM16Encoding { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static TextureEncoding RGBDEncoding { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
@@ -756,6 +884,38 @@ namespace THREE
 #pragma warning disable CS0626
         public extern static void Log(object message = default(object), params object[] optionalParams);
 #pragma warning restore CS0626
+    }
+    [External]
+    public partial class PropertyBinding
+    {
+        [External]
+        public static class GlobalClass
+        {
+#pragma warning disable CS0626
+            [FieldProperty]
+            [Name(false)]
+            public extern static double GeometryIdCount { get; set; }
+#pragma warning restore CS0626
+        }
+        [External]
+        public class Composite
+        {
+#pragma warning disable CS0824
+            public extern Composite(object targetGroup, object path, object parsedPath = default(object));
+#pragma warning restore CS0824
+#pragma warning disable CS0626
+            public extern object GetValue(object array, double offset);
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+            public extern void SetValue(object array, double offset);
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+            public extern void Bind();
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+            public extern void Unbind();
+#pragma warning restore CS0626
+        }
     }
     [External]
     public static class ColorKeywords
@@ -1647,18 +1807,22 @@ namespace THREE
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern string ValueTypeName { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern Float32Array TimeBufferType { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern Float32Array ValueBufferType { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern InterpolationModes DefaultInterpolation { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0824
@@ -1740,39 +1904,6 @@ namespace THREE
     {
         double this[string versioning] { get; set; }
     }
-
-    [External]
-    public partial class PropertyBinding
-    {
-        [External]
-        public static class GlobalClass
-        {
-#pragma warning disable CS0626
-            [FieldProperty]
-            public extern static double OmetryIdCount { get; set; }
-#pragma warning restore CS0626
-        }
-        [External]
-        public class Composite
-        {
-#pragma warning disable CS0824
-            public extern Composite(object targetGroup, object path, object parsedPath = default(object));
-#pragma warning restore CS0824
-#pragma warning disable CS0626
-            public extern object GetValue(object array, double offset);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-            public extern void SetValue(object array, double offset);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-            public extern void Bind();
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-            public extern void Unbind();
-#pragma warning restore CS0626
-        }
-
-    }
     [External]
     public partial class PropertyBinding
     {
@@ -1794,18 +1925,22 @@ namespace THREE
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern BindingTypeInterface BindingType { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern VersioningInterface Versioning { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern Delegate[] GetterByBindingType { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern Delegate[][] SetterByBindingTypeAndVersioning { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0824
@@ -2391,6 +2526,7 @@ namespace THREE
     {
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static double MaxIndex { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
@@ -3430,10 +3566,12 @@ namespace THREE
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static Vector3 DefaultUp { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static bool DefaultMatrixAutoUpdate { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0824
@@ -3636,14 +3774,19 @@ namespace THREE
     public interface RaycasterParameters
     {
         [FieldProperty]
+        [Name(false)]
         object Mesh { get; set; }
         [FieldProperty]
+        [Name(false)]
         object Line { get; set; }
         [FieldProperty]
+        [Name(false)]
         object LOD { get; set; }
         [FieldProperty]
+        [Name(false)]
         PointsInterface Points { get; set; }
         [FieldProperty]
+        [Name(false)]
         object Sprite { get; set; }
     }
     [External]
@@ -3680,32 +3823,12 @@ namespace THREE
         public extern void Set(Vector3 origin, Vector3 direction);
 #pragma warning restore CS0626
 #pragma warning disable CS0626
-        public extern void SetFromCamera(coordsInterface coords, Camera camera);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
         public extern Intersection[] IntersectObject(Object3D @object, bool recursive = default(bool));
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         public extern Intersection[] IntersectObjects(Object3D[] objects, bool recursive = default(bool));
 #pragma warning restore CS0626
     }
-
-    [External]
-    public interface coordsInterface
-    {
-        [FieldProperty]
-        int X { get; set; }
-        [FieldProperty]
-        int Y { get; set; }
-    }
-
-    [ObjectLiteral]
-    public class JSONcoordsInterface : coordsInterface
-    {
-        public int X { get; set; }
-        public int Y { get; set; }
-    }
-
     [External]
     public class Layers
     {
@@ -4020,6 +4143,7 @@ namespace THREE
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static LoaderHandler Handlers { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0824
@@ -7896,10 +8020,12 @@ namespace THREE
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static string[] RotationOrders { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static string DefaultOrder { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0824
@@ -10824,7 +10950,7 @@ namespace THREE
 #pragma warning restore CS0824
     }
     [ObjectLiteral]
-    public class JSONAderChunkInterface : AderChunkInterface
+    public class JSONShaderChunkInterface : ShaderChunkInterface
     {
 #pragma warning disable CS0626
         public extern string Alphamap_fragment { get; set; }
@@ -11130,17 +11256,17 @@ namespace THREE
         public extern string Worldpos_vertex { get; set; }
 #pragma warning restore CS0626
         [External]
-        public delegate string AderChunkInterfaceIndexerDelegate(string name);
+        public delegate string ShaderChunkInterfaceIndexerDelegate(string name);
 
 #pragma warning disable CS0626
         public extern string this[string name] { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
-        public extern AderChunkInterfaceIndexerDelegate indexer { get; set; }
+        public extern ShaderChunkInterfaceIndexerDelegate indexer { get; set; }
 #pragma warning restore CS0626
     }
     [External]
-    public interface AderChunkInterface
+    public interface ShaderChunkInterface
     {
         [FieldProperty]
         string Alphamap_fragment { get; set; }
@@ -11370,7 +11496,7 @@ namespace THREE
         string FragmentShader { get; set; }
     }
     [ObjectLiteral]
-    public class JSONAderLibInterface : AderLibInterface
+    public class JSONShaderLibInterface : ShaderLibInterface
     {
 #pragma warning disable CS0626
         public extern Shader Basic { get; set; }
@@ -11409,17 +11535,17 @@ namespace THREE
         public extern Shader DistanceRGBA { get; set; }
 #pragma warning restore CS0626
         [External]
-        public delegate Shader AderLibInterfaceIndexerDelegate(string name);
+        public delegate Shader ShaderLibInterfaceIndexerDelegate(string name);
 
 #pragma warning disable CS0626
         public extern Shader this[string name] { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
-        public extern AderLibInterfaceIndexerDelegate indexer { get; set; }
+        public extern ShaderLibInterfaceIndexerDelegate indexer { get; set; }
 #pragma warning restore CS0626
     }
     [External]
-    public interface AderLibInterface
+    public interface ShaderLibInterface
     {
         [FieldProperty]
         Shader Basic { get; set; }
@@ -12197,7 +12323,7 @@ namespace THREE
         HemisphereLigttsInterface HemisphereLigtts { get; set; }
     }
     [ObjectLiteral]
-    public class JSONIformsLibInterface : IformsLibInterface
+    public class JSONUniformsLibInterface : UniformsLibInterface
     {
 #pragma warning disable CS0626
         public extern CommonInterface Common { get; set; }
@@ -12237,7 +12363,7 @@ namespace THREE
 #pragma warning restore CS0626
     }
     [External]
-    public interface IformsLibInterface
+    public interface UniformsLibInterface
     {
         [FieldProperty]
         CommonInterface Common { get; set; }
@@ -12911,10 +13037,12 @@ namespace THREE
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static object DEFAULT_IMAGE { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static object DEFAULT_MAPPING { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0824
@@ -14009,6 +14137,7 @@ namespace THREE
     {
 #pragma warning disable CS0626
         [FieldProperty]
+        [Name(false)]
         public extern static WorldUVGeneratorInterface WorldUVGenerator { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0824
@@ -15308,16 +15437,4 @@ namespace THREE
 #pragma warning restore CS0626
     }
 
-}
-
-[External]
-public class ArrayLike<T>
-{
-#pragma warning disable CS0626
-    [FieldProperty]
-    public extern double Length { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-    public extern T this[double n] { get; set; }
-#pragma warning restore CS0626
 }
