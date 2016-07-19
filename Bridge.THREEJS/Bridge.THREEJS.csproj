@@ -35,6 +35,7 @@
     <NoStdLib>true</NoStdLib>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="extras.cs" />
     <Compile Include="THREEJS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
