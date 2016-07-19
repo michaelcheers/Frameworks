@@ -1,281 +1,12 @@
 using Bridge;
 using System;
 using Bridge.Html5;
+using Bridge.WebGL;
 using RegExp = Bridge.Text.RegularExpressions.Regex;
 using number = System.Double;
 using Number = System.Double;
-using Bridge.WebGL;
 
 
-namespace THREE.AnimationUtils
-{
-    [External]
-    public static class GlobalClass
-    {
-#pragma warning disable CS0626
-        public extern static object ArraySlice(object array, double from, double to);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        public extern static object ConvertArray(object array, object type, bool forceClone);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        public extern static bool IsTypedArray(object @object);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        public extern static double[] GetKeyFrameOrder(double times);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        public extern static object[] SortedArray(object[] values, double stride, double[] order);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        public extern static void FlattenJSON(string[] jsonKeys, object[] times, object[] values, string valuePropertyName);
-#pragma warning restore CS0626
-    }
-
-}
-namespace THREE.GeometryUtils
-{
-    [External]
-    public static class GlobalClass
-    {
-#pragma warning disable CS0626
-        [FieldProperty]
-        [Name(false)]
-        public extern static double Object3DIdCount { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        [Name(false)]
-        public extern static LoadingManager DefaultLoadingManager { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        public extern static object Merge(object goemetry1, object goemetry2, object materialIndexOffset = default(object));
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        public extern static object Center(object geometry);
-#pragma warning restore CS0626
-    }
-
-}
-namespace THREE.Cache
-{
-    [External]
-    public static class GlobalClass
-    {
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static bool Enabled { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static object Files { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        [Name(false)]
-        public extern static double MaterialIdCount { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        public extern static void Add(string key, object file);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        public extern static object Get(string key);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        public extern static void Remove(string key);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        public extern static void Clear();
-#pragma warning restore CS0626
-    }
-
-}
-namespace THREE.Math
-{
-    [External]
-    public static class GlobalClass
-    {
-#pragma warning disable CS0626
-        [FieldProperty]
-        [Name(false)]
-        public extern static LineMode LineStrip { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        [Name(false)]
-        public extern static LineMode LinePieces { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        [Name(false)]
-        public extern static ShaderChunkInterface ShaderChunk { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        [Name(false)]
-        public extern static ShaderLibInterface ShaderLib { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        [FieldProperty]
-        [Name(false)]
-        public extern static UniformsLibInterface UniformsLib { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        public extern static string GenerateUUID();
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        public extern static double Clamp(double value, double min, double max);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        public extern static double EuclideanModulo(double n, double m);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        public extern static double MapLinear(double x, double a1, double a2, double b1, double b2);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        public extern static double Smoothstep(double x, double min, double max);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        public extern static double Smootherstep(double x, double min, double max);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        public extern static double Random16();
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        public extern static double RandInt(double low, double high);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        public extern static double RandFloat(double low, double high);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        public extern static double RandFloatSpread(double range);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        public extern static double DegToRad(double degrees);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        public extern static double RadToDeg(double radians);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        public extern static bool IsPowerOfTwo(double value);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        public extern static double NearestPowerOfTwo(double value);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        public extern static double NextPowerOfTwo(double value);
-#pragma warning restore CS0626
-    }
-
-}
-namespace THREE.UniformsUtils
-{
-    [External]
-    public static class GlobalClass
-    {
-#pragma warning disable CS0626
-        [FieldProperty]
-        [Name(false)]
-        public extern static double TextureIdCount { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        public extern static object Merge(object[] uniforms);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        public extern static object Clone(object uniforms_src);
-#pragma warning restore CS0626
-    }
-
-}
-namespace THREE.CurveUtils
-{
-    [External]
-    public static class GlobalClass
-    {
-#pragma warning disable CS0626
-        public extern static double TangentQuadraticBezier(double t, double p0, double p1, double p2);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        public extern static double TangentCubicBezier(double t, double p0, double p1, double p2, double p3);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        public extern static double TangentSpline(double t, double p0, double p1, double p2, double p3);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        public extern static double Interpolate(double p0, double p1, double p2, double p3, double t);
-#pragma warning restore CS0626
-    }
-
-}
-namespace THREE.ImageUtils
-{
-    [External]
-    public static class GlobalClass
-    {
-#pragma warning disable CS0626
-        [FieldProperty]
-        public extern static string CrossOrigin { get; set; }
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        public extern static Texture LoadTexture(string url, Mapping mapping = default(Mapping), loadTextureParam21Delegate onLoad = default(loadTextureParam21Delegate), loadTextureParam31Delegate onError = default(loadTextureParam31Delegate));
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        public extern static Texture LoadTextureCube(string[] array, Mapping mapping = default(Mapping), loadTextureCubeParam21Delegate onLoad = default(loadTextureCubeParam21Delegate), loadTextureCubeParam31Delegate onError = default(loadTextureCubeParam31Delegate));
-#pragma warning restore CS0626
-    }
-    [External]
-    public delegate void loadTextureParam21Delegate(Texture texture);
-    [External]
-    public delegate void loadTextureParam31Delegate(string message);
-    [External]
-    public delegate void loadTextureCubeParam21Delegate(Texture texture);
-    [External]
-    public delegate void loadTextureCubeParam31Delegate(string message);
-
-}
-namespace THREE.SceneUtils
-{
-    [External]
-    public static class GlobalClass
-    {
-#pragma warning disable CS0626
-        public extern static Object3D CreateMultiMaterialObject(Geometry geometry, Material[] materials);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        public extern static void Detach(Object3D child, Object3D parent, Scene scene);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        public extern static void Attach(Object3D child, Scene scene, Object3D parent);
-#pragma warning restore CS0626
-    }
-
-}
-namespace THREE.ShapeUtils
-{
-    [External]
-    public static class GlobalClass
-    {
-#pragma warning disable CS0626
-        public extern static double Area(double[] contour);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        public extern static Vector2[][] Triangulate(Vector2[] contour, bool indices);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        public extern static Vector2[][] TriangulateShape(Vector2[] contour, Vector2[][] holes);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        public extern static bool IsClockWise(double[] pts);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        public extern static double B2(double t, double p0, double p1, double p2);
-#pragma warning restore CS0626
-#pragma warning disable CS0626
-        public extern static double B3(double t, double p0, double p1, double p2, double p3);
-#pragma warning restore CS0626
-    }
-
-}
 namespace THREE
 {
     [External]
@@ -876,6 +607,56 @@ namespace THREE
         public extern static TextureEncoding RGBDEncoding { get; set; }
 #pragma warning restore CS0626
 #pragma warning disable CS0626
+        [FieldProperty]
+        [Name(false)]
+        public extern static double GeometryIdCount { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        [Name(false)]
+        public extern static double Object3DIdCount { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        [Name(false)]
+        public extern static LoadingManager DefaultLoadingManager { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        [Name(false)]
+        public extern static double MaterialIdCount { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        [Name(false)]
+        public extern static LineMode LineStrip { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        [Name(false)]
+        public extern static LineMode LinePieces { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        [Name(false)]
+        public extern static ShaderChunkInterface ShaderChunk { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        [Name(false)]
+        public extern static ShaderLibInterface ShaderLib { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        [Name(false)]
+        public extern static UniformsLibInterface UniformsLib { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        [Name(false)]
+        public extern static double TextureIdCount { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
         public extern static void Warn(object message = default(object), params object[] optionalParams);
 #pragma warning restore CS0626
 #pragma warning disable CS0626
@@ -886,36 +667,82 @@ namespace THREE
 #pragma warning restore CS0626
     }
     [External]
-    public partial class PropertyBinding
+    public static class ImageUtils
     {
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static string CrossOrigin { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        public extern static Texture LoadTexture(string url, Mapping mapping = default(Mapping), loadTextureParam21Delegate onLoad = default(loadTextureParam21Delegate), loadTextureParam31Delegate onError = default(loadTextureParam31Delegate));
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        public extern static Texture LoadTextureCube(string[] array, Mapping mapping = default(Mapping), loadTextureCubeParam21Delegate onLoad = default(loadTextureCubeParam21Delegate), loadTextureCubeParam31Delegate onError = default(loadTextureCubeParam31Delegate));
+#pragma warning restore CS0626
         [External]
-        public static class GlobalClass
-        {
-#pragma warning disable CS0626
-            [FieldProperty]
-            [Name(false)]
-            public extern static double GeometryIdCount { get; set; }
-#pragma warning restore CS0626
-        }
+        public delegate void loadTextureParam21Delegate(Texture texture);
         [External]
-        public class Composite
-        {
-#pragma warning disable CS0824
-            public extern Composite(object targetGroup, object path, object parsedPath = default(object));
-#pragma warning restore CS0824
+        public delegate void loadTextureParam31Delegate(string message);
+        [External]
+        public delegate void loadTextureCubeParam21Delegate(Texture texture);
+        [External]
+        public delegate void loadTextureCubeParam31Delegate(string message);
+    }
+    [External]
+    public static class AnimationUtils
+    {
 #pragma warning disable CS0626
-            public extern object GetValue(object array, double offset);
+        public extern static object ArraySlice(object array, double from, double to);
 #pragma warning restore CS0626
 #pragma warning disable CS0626
-            public extern void SetValue(object array, double offset);
+        public extern static object ConvertArray(object array, object type, bool forceClone);
 #pragma warning restore CS0626
 #pragma warning disable CS0626
-            public extern void Bind();
+        public extern static bool IsTypedArray(object @object);
 #pragma warning restore CS0626
 #pragma warning disable CS0626
-            public extern void Unbind();
+        public extern static double[] GetKeyFrameOrder(double times);
 #pragma warning restore CS0626
-        }
+#pragma warning disable CS0626
+        public extern static object[] SortedArray(object[] values, double stride, double[] order);
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        public extern static void FlattenJSON(string[] jsonKeys, object[] times, object[] values, string valuePropertyName);
+#pragma warning restore CS0626
+    }
+    [External]
+    public static class GeometryUtils
+    {
+#pragma warning disable CS0626
+        public extern static object Merge(object goemetry1, object goemetry2, object materialIndexOffset = default(object));
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        public extern static object Center(object geometry);
+#pragma warning restore CS0626
+    }
+    [External]
+    public static class Cache
+    {
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static bool Enabled { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        [FieldProperty]
+        public extern static object Files { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        public extern static void Add(string key, object file);
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        public extern static object Get(string key);
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        public extern static void Remove(string key);
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        public extern static void Clear();
+#pragma warning restore CS0626
     }
     [External]
     public static class ColorKeywords
@@ -1510,6 +1337,116 @@ namespace THREE
 #pragma warning restore CS0626
     }
     [External]
+    public static class Math
+    {
+#pragma warning disable CS0626
+        public extern static string GenerateUUID();
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        public extern static double Clamp(double value, double min, double max);
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        public extern static double EuclideanModulo(double n, double m);
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        public extern static double MapLinear(double x, double a1, double a2, double b1, double b2);
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        public extern static double Smoothstep(double x, double min, double max);
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        public extern static double Smootherstep(double x, double min, double max);
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        public extern static double Random16();
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        public extern static double RandInt(double low, double high);
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        public extern static double RandFloat(double low, double high);
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        public extern static double RandFloatSpread(double range);
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        public extern static double DegToRad(double degrees);
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        public extern static double RadToDeg(double radians);
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        public extern static bool IsPowerOfTwo(double value);
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        public extern static double NearestPowerOfTwo(double value);
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        public extern static double NextPowerOfTwo(double value);
+#pragma warning restore CS0626
+    }
+    [External]
+    public static class UniformsUtils
+    {
+#pragma warning disable CS0626
+        public extern static object Merge(object[] uniforms);
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        public extern static object Clone(object uniforms_src);
+#pragma warning restore CS0626
+    }
+    [External]
+    public static class CurveUtils
+    {
+#pragma warning disable CS0626
+        public extern static double TangentQuadraticBezier(double t, double p0, double p1, double p2);
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        public extern static double TangentCubicBezier(double t, double p0, double p1, double p2, double p3);
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        public extern static double TangentSpline(double t, double p0, double p1, double p2, double p3);
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        public extern static double Interpolate(double p0, double p1, double p2, double p3, double t);
+#pragma warning restore CS0626
+    }
+    [External]
+    public static class SceneUtils
+    {
+#pragma warning disable CS0626
+        public extern static Object3D CreateMultiMaterialObject(Geometry geometry, Material[] materials);
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        public extern static void Detach(Object3D child, Object3D parent, Scene scene);
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        public extern static void Attach(Object3D child, Scene scene, Object3D parent);
+#pragma warning restore CS0626
+    }
+    [External]
+    public static class ShapeUtils
+    {
+#pragma warning disable CS0626
+        public extern static double Area(double[] contour);
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        public extern static Vector2[][] Triangulate(Vector2[] contour, bool indices);
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        public extern static Vector2[][] TriangulateShape(Vector2[] contour, Vector2[][] holes);
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        public extern static bool IsClockWise(double[] pts);
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        public extern static double B2(double t, double p0, double p1, double p2);
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        public extern static double B3(double t, double p0, double p1, double p2, double p3);
+#pragma warning restore CS0626
+    }
+    [External]
     public enum MOUSE
     {
         LEFT,
@@ -1903,6 +1840,29 @@ namespace THREE
     public interface VersioningInterface
     {
         double this[string versioning] { get; set; }
+    }
+    public partial class PropertyBinding
+    {
+        [External]
+        public class Composite
+        {
+#pragma warning disable CS0824
+            public extern Composite(object targetGroup, object path, object parsedPath = default(object));
+#pragma warning restore CS0824
+#pragma warning disable CS0626
+            public extern object GetValue(object array, double offset);
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+            public extern void SetValue(object array, double offset);
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+            public extern void Bind();
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+            public extern void Unbind();
+#pragma warning restore CS0626
+        }
+
     }
     [External]
     public partial class PropertyBinding
