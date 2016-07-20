@@ -3788,12 +3788,36 @@ namespace THREE
         public extern void Set(Vector3 origin, Vector3 direction);
 #pragma warning restore CS0626
 #pragma warning disable CS0626
+        public extern void SetFromCamera(coordsInterface coords, Camera camera);
+#pragma warning restore CS0626
+#pragma warning disable CS0626
         public extern Intersection[] IntersectObject(Object3D @object, boolean recursive = default(boolean));
 #pragma warning restore CS0626
 #pragma warning disable CS0626
         public extern Intersection[] IntersectObjects(Object3D[] objects, boolean recursive = default(boolean));
 #pragma warning restore CS0626
     }
+
+    [External]
+    public interface coordsInterface
+    {
+        [FieldProperty]
+        int X { get; set; }
+        [FieldProperty]
+        int Y { get; set; }
+    }
+
+    [ObjectLiteral]
+    public class JSONcoordsInterface : coordsInterface
+    {
+#pragma warning disable CS0626
+        public extern int X { get; set; }
+#pragma warning restore CS0626
+#pragma warning disable CS0626
+        public extern int Y { get; set; }
+#pragma warning restore CS0626
+    }
+
     [External]
     public class Layers
     {
