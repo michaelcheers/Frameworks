@@ -13,6 +13,7 @@ using RegExp = Bridge.Text.RegularExpressions.Regex;
 namespace THREE
 {
     [External]
+    [Name("THREE")]
     public static class GlobalClass
     {
 #pragma warning disable CS0626
